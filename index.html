@@ -11,6 +11,10 @@
   <!--Bootstrap CDN-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--Animate.CSS StyleSheet-->
+  <link rel="stylesheet" href="css\animate.css">
+
   <title>University Centre Peterborough Computing</title>
 </head>
 
@@ -21,9 +25,9 @@
       <img src="images/UCP Colour Logo Landscape (transparent background).png" alt="logo" style="height:50px;">
     </a>
 
-    <a class="navbar-brand" href="#">
+    <span class="navbar-brand mb-0 h1" href="#">
       <strong>Computing</strong>
-    </a>
+    </span>
 
     <!-- Links -->
     <ul class="navbar-nav">
@@ -31,7 +35,7 @@
         <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Course Information</a>
+        <a class="nav-link" href="\CourseInformation.html">Course Information</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Module Explorer</a>
@@ -39,65 +43,69 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Events Calendar</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Virtual Open Day</a>
+      </li>
     </ul>
   </nav>
   <!--Carousel-->
   <div class="jumbotron jumbotron-fluid mb-4">
     <div class="container">
-      <h1>UCP Computing</h1>
+      <h1 class="animated fadeInDown">University Centre Peterborough - Computing and Information Systems</h1>
       <hr class="my-4" \>
-      <p>Find out more about the two different computing degrees offered at University Centre Peterborough, upcoming
+      <p>Find out more about the BSc(Hons) and FdSc Computing and Information Systems degrees offered at University
+        Centre Peterborough, upcoming
         events, and more</p>
     </div>
   </div>
   <!--Image Carousel-->
   <div class="container-fluid">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:400px">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" style="height:400px;">
-      <div class="carousel-item active" style="height:400px">
-        <img src="images\A19_7794 YES.jpg" class="d-block w-100" alt="...">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:400px">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" style="height:400px;">
+        <div class="carousel-item active" style="height:400px">
+          <img src="images\A19_7794 YES.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" style="height:400px">
+          <img src="images\A19_8654 YES.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" style="height:400px">
+          <img src="images\A19_8737 YES (Crop).jpg" class="d-block w-100" alt="...">
+        </div>
       </div>
-      <div class="carousel-item" style="height:400px">
-        <img src="images\A19_8654 YES.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" style="height:400px">
-        <img src="images\A19_8737 YES (Crop).jpg" class="d-block w-100" alt="...">
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
   </div>
   <!--Cards-->
-  <div class="container-fluid mb-4">
+  <div class="container-fluid">
     <div class="row mt-4">
       <div class="col-sm-4">
-        <div class="card">
-          <div class="card-header">Card 1</div>
-          <div class="card-body">This is a card</div>
-          <div class="card-footer"></div>
+        <div class="card mb-4">
+          <div class="card-header">UCP Virtual Open Day</div>
+          <div class="card-body">UCP's interactive open day is open now! Check it out by clicking the link below and making a decision about your future.</div>
+          <div class="card-footer"><button class="btn btn-primary">Explore Now</button></div>
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="card">
+        <div class="card mb-4">
           <div class="card-header">Card 2</div>
           <div class="card-body">This is a card</div>
           <div class="card-footer"></div>
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="card">
+        <div class="card mb-4">
           <div class="card-header">Card 3</div>
           <div class="card-body">This is a card</div>
           <div class="card-footer"></div>
@@ -109,13 +117,13 @@
   <footer id="sticky-footer" class="py-4 bg-warning text-black-50" style="font-size: 25px">
     <div class="container text-center">
       <p style="font-size: 16px">University Centre Peterborough - Computing</p>
-      <i class="fab fa-facebook-square"></i>
+      <a href="https://www.facebook.com/ucpeterborough/" style="color: black; opacity: 50%;"><i class="fab fa-facebook-square"></i></a>
       <span class="ml-1"></span>
-      <i class="fab fa-twitter-square"></i>
+      <a href="https://twitter.com/UCPeterborough" style="color: black; opacity: 50%;"><i class="fab fa-twitter-square"></i></a>
       <span class="ml-1"></span>
-      <i class="fab fa-instagram"></i>
+      <a href="https://www.instagram.com/ucpeterborough/" style = "color: black; opacity: 50%"><i class="fab fa-instagram"></i></a>
       <span class="ml-1"></span>
-      <i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/school/university-centre-peterborough/" style="color: black; opacity: 50%;"><i class="fab fa-linkedin"></i></a>
     </div>
   </footer>
 
