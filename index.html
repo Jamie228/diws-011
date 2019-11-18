@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <!--Font Awesome CDN-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
@@ -13,9 +14,12 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!--Animate.CSS StyleSheet-->
-  <link rel="stylesheet" href="css\animate.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
   <title>University Centre Peterborough Computing</title>
+  
 </head>
 
 <body>
@@ -51,14 +55,14 @@
   <!--Carousel-->
   <div class="jumbotron jumbotron-fluid mb-4">
     <div class="container">
-      <h1 class="animated fadeInDown">University Centre Peterborough - Computing and Information Systems</h1>
+      <h1 class="animated fadeInDown display-4">University Centre Peterborough - Computing and Information Systems</h1>
       <hr class="my-4" \>
       <p>Find out more about the BSc (Hons) and FdSc Computing and Information Systems degrees offered at University
         Centre Peterborough, upcoming
         events, and more</p>
     </div>
   </div>
-  <!--Image Carousel-->
+  <!--Image Carousel
   <div class="container-fluid">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:400px">
       <ol class="carousel-indicators">
@@ -87,27 +91,42 @@
       </a>
     </div>
   </div>
+-->
+
+<h1 class="text-center display-4">Gallery</h1>
+<h3 class="text-center">See pictures from around the campus and the computing degrees</h3>
+
+<div class="row">
+  <div class="col-sm-3 text-center"><a data-fancybox="gallery" href="images/A19_7794 YES.jpg"><img src="images/A19_7794 YES.jpg" class="image-responsive img-thumbnail" width="75%"></a></div>
+  <div class="col-sm-3 text-center"><a data-fancybox="gallery" href="images/A19_8654 YES.jpg"><img src="images/A19_8654 YES.jpg" class="image-responsive img-thumbnail" width="75%"></a></div>
+  <div class="col-sm-3 text-center"><a data-fancybox="gallery" href="images/A19_8654 YES.jpg"><img src="images/A19_8654 YES.jpg" class="image-responsive img-thumbnail" width="75%"></a></div>
+  <div class="col-sm-3 text-center"><a data-fancybox="gallery" href="images/A19_8654 YES.jpg"><img src="images/A19_8654 YES.jpg" class="image-responsive img-thumbnail" width="75%"></a></div>
+</div>
+
   <!--Cards-->
   <div class="container-fluid">
     <div class="row mt-4">
       <div class="col-sm-4">
         <div class="card mb-4">
           <div class="card-header">UCP Virtual Open Day</div>
-          <div class="card-body">UCP's interactive open day is open now! Check it out by clicking the link below and making a decision about your future.</div>
+          <div class="card-body">UCP's interactive open day is open now! Check it out by clicking the link below and
+            making a decision about your future.</div>
           <div class="card-footer"><button class="btn btn-primary">Explore Now</button></div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card mb-4">
           <div class="card-header">Student Profiles</div>
-          <div class="card-body">A few of the UCP Computing students have come to tell you what it's like to study a degree in one of the fastest growing cities in the UK.</div>
+          <div class="card-body">A few of the UCP Computing students have come to tell you what it's like to study a
+            degree in one of the fastest growing cities in the UK.</div>
           <div class="card-footer"><button class="btn btn-primary">View Now</button></div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card mb-4">
           <div class="card-header">Events</div>
-          <div class="card-body">UCP has many exciting events coming up. Find an open day, pub quiz, fundraiser or something entirely different on our intercative calendar!</div>
+          <div class="card-body">UCP has many exciting events coming up. Find an open day, pub quiz, fundraiser or
+            something entirely different on our intercative calendar!</div>
           <div class="card-footer"><button class="btn btn-primary">View Now</button></div>
         </div>
       </div>
@@ -117,18 +136,22 @@
   <footer id="sticky-footer fixed-bottom" class="py-4 bg-warning text-black-50" style="font-size: 25px">
     <div class="container text-center">
       <p style="font-size: 16px">University Centre Peterborough - Computing</p>
-      <a href="https://www.facebook.com/ucpeterborough/" style="color: black; opacity: 50%;"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.facebook.com/ucpeterborough/" style="color: black; opacity: 50%;"><i
+          class="fab fa-facebook-square"></i></a>
       <span class="ml-1"></span>
-      <a href="https://twitter.com/UCPeterborough" style="color: black; opacity: 50%;"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://twitter.com/UCPeterborough" style="color: black; opacity: 50%;"><i
+          class="fab fa-twitter-square"></i></a>
       <span class="ml-1"></span>
-      <a href="https://www.instagram.com/ucpeterborough/" style = "color: black; opacity: 50%"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/ucpeterborough/" style="color: black; opacity: 50%"><i
+          class="fab fa-instagram"></i></a>
       <span class="ml-1"></span>
-      <a href="https://www.linkedin.com/school/university-centre-peterborough/" style="color: black; opacity: 50%;"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/school/university-centre-peterborough/" style="color: black; opacity: 50%;"><i
+          class="fab fa-linkedin"></i></a>
     </div>
   </footer>
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
   <!--Required Bootstrap JS-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -140,6 +163,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
 </body>
 
 </html>
