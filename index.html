@@ -33,32 +33,47 @@
       <strong>Computing</strong>
     </span>
 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
     <!-- Links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="\CourseInformation.html">Course Information</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Module Explorer</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Events Calendar</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Virtual Open Day</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Course Information
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="CourseInformation.html">BSc (Hons)</a>
+            <a class="dropdown-item" href="#">FdSc</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Module Explorer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Virtual Open Day <span class="badge badge-secondary">New</span></a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <!--Carousel-->
-  <div class="jumbotron jumbotron-fluid mb-4"
+  <div class="animated fadeIn jumbotron jumbotron-fluid mb-4"
     style="background-image: url('Images/BuildingOverlay.jpg'); background-size: cover; color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
     <div class="container">
       <h1 class="animated fadeInDown display-4">University Centre Peterborough - Computing and Information Systems</h1>
       <hr class="my-4" \>
-      <p class="lead">Find out more about the BSc (Hons) and FdSc Computing and Information Systems degrees offered at
+      <p class="lead animated fadeInUp">Find out more about the BSc (Hons) and FdSc Computing and Information Systems
+        degrees offered at
         University
         Centre Peterborough by taking a virtual open day, using our module explorer and taking a look at some of the
         events happening at the University in the coming months!</p>
@@ -96,7 +111,8 @@
 -->
 
   <h1 class="text-center display-4">Gallery</h1>
-  <h3 class="text-center pb-3"><small class="text-muted">A collection of images gathered from Computing classes and the campus</small></h3>
+  <h3 class="text-center pb-3"><small class="text-muted">A collection of images gathered from Computing classes and the
+      campus</small></h3>
 
   <div class="container-fluid">
     <div class="row pb-3">
@@ -112,7 +128,8 @@
   </div>
 
   <h1 class="text-center display-4">News</h1>
-  <h3 class="text-center pb-3"><small class="text-muted">A collection of recent news stories and updates from the campus and this website</small></h3>
+  <h3 class="text-center pb-3"><small class="text-muted">A collection of recent news stories and updates from the campus
+      and this website</small></h3>
 
   <!--Cards-->
   <div class="container-fluid">
