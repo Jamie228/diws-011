@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Heading from './components/Heading';
+import TextInput from './components/TextInput';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           Learn React
         </a>
         <Heading color='#ffcc33'>Goodbye</Heading>
+        <TextInput />
       </header>
     </div>
   );
