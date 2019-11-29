@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Animate.CSS StyleSheet-->
+    <link rel="stylesheet" href="css\animate.css">
+
+    <title>Events Calendar</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/UCP Colour Logo Landscape (transparent background).png" alt="logo" style="height:50px;">
+        </a>
+        <span class="navbar-brand mb-0 h1" href="#">
+            <strong>Computing</strong>
+        </span>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Course Information
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="bscInfo.html">BSc (Hons)</a>
+                        <a class="dropdown-item" href="fdscInfo.html">FdSc</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="moduleExplorer.html">Module Explorer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Events Calendar<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:3000/">Virtual Open Day <span
+                            class="badge badge-secondary">New</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Jumbotron-->
+
+    <div class="animated fadeIn slow jumbotron jumbotron-fluid mb-4"
+        style="background-image: url('images/robot-overlay.png'); background-size: cover; color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+        <div class="container">
+            <h1 class="animated fadeInDown display-4">Events Calendar</h1>
+            <hr class="my-4" \>
+            <p class="lead animated fadeInUp">Use the interactive calendar to see any upcoming events. Find a time you
+                can visit the university, or check out any of the other fun activities available to both students and
+                the public.</p>
+        </div>
+
+        <style>
+            .responsiveCal {
+
+                position: relative;
+                padding-bottom: 75%;
+                height: 0;
+                overflow: hidden;
+
+            }
+
+            .responsiveCal iframe {
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+            }
+        </style>
+
+    </div>
+
+    <div class="responsiveCal mb-2">
+        <iframe
+            src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffcc33&amp;ctz=Europe%2FLondon&amp;src=cGV0ZXJib3JvdWdoLmFjLnVrX2h1ajA0OThzNmM1cXQycGM2aDgzbmdoYWU0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23515151&amp;showTitle=1&amp;showNav=1&amp;showCalendars=0&amp;hl=en_GB&amp;title=UCP%20Events%20Calendar"
+            style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <footer id="sticky-footer fixed-bottom" class="py-4 bg-warning text-black-50" style="font-size: 25px">
+        <div class="container text-center">
+            <p style="font-size: 16px">University Centre Peterborough - Computing</p>
+            <a href="https://www.facebook.com/ucpeterborough/" style="color: black; opacity: 50%;"><i
+                    class="fab fa-facebook-square"></i></a>
+            <span class="ml-1"></span>
+            <a href="https://twitter.com/UCPeterborough" style="color: black; opacity: 50%;"><i
+                    class="fab fa-twitter-square"></i></a>
+            <span class="ml-1"></span>
+            <a href="https://www.instagram.com/ucpeterborough/" style="color: black; opacity: 50%"><i
+                    class="fab fa-instagram"></i></a>
+            <span class="ml-1"></span>
+            <a href="https://www.linkedin.com/school/university-centre-peterborough/"
+                style="color: black; opacity: 50%;"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!--Other jQuery Plugin-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <!--Required Bootstrap JS-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!--Fancybox-->
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>
