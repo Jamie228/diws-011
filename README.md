@@ -4,4 +4,4 @@ Developing Interactive Web Solutions Assignment 011 - an interactive website mad
 This is a website constructed in HTML and React in order to create an interactive website.
 
 It makes use of the following frameworks and libraries:
-Bootstrap
+Bootstrap, FancyBox, Animate.css, jQuery, React
