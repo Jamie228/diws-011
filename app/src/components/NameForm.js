@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import React from 'react';
 
+
 export function NameForm(props) {
     const [name, setName] = useState("");
     
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        submitted = true;
     }
     return (
       <form onSubmit={handleSubmit}>
