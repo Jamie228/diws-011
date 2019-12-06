@@ -30,7 +30,7 @@ export function NavBar() {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="localhost:5500/index.html">
+            <a className="nav-link" href="http://localhost:5500/index.html">
               Home<span className="sr-only">(current)</span>
             </a>
           </li>
@@ -50,21 +50,21 @@ export function NavBar() {
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <a className="dropdown-item" href="bscInfo.html">
+              <a className="dropdown-item" href="http://localhost:5500/bscInfo.html">
                 BSc (Hons)
               </a>
-              <a className="dropdown-item" href="fdscInfo.html">
+              <a className="dropdown-item" href="http://localhost:5500/fdscInfo.html">
                 FdSc
               </a>
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="moduleExplorer.html">
+            <a className="nav-link" href="http://localhost:5500/moduleExplorer.html">
               Module Explorer
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="calendar.html">
+            <a className="nav-link" href="http://localhost:5500/calendar.html">
               Events Calendar
             </a>
           </li>
