@@ -40,8 +40,8 @@ export function NameForm(props) {
             <button onClick = {handleBscClick} type="button" className="btn btn-primary btn-lg btn-block">BSc (Hons)</button>
             <button type="button" className="btn btn-primary btn-lg btn-block">FdSc</button>
         </div>
+        
       ) : null}
-      
     </>
   );
 }
