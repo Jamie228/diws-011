@@ -13,12 +13,12 @@ export function Openday(props) {
   const handleInPboClick = evt => {
     setLivingResponse("pbo");
     setLivingSubmitted(true);
-  }
+  };
 
   const handleOutPbo = evt => {
     setLivingResponse("nopbo");
     setLivingSubmitted(true);
-  }
+  };
 
   const handleAccClick = evt => {
     setCourseName("BSc (Hons) Accounting and Finance");
@@ -51,7 +51,6 @@ export function Openday(props) {
 
   let courseDetails;
   let liveDetails;
-
 
   if (courseName === "BSc (Hons) Accounting and Finance") {
     courseDetails = (
@@ -149,22 +148,32 @@ export function Openday(props) {
     );
   }
 
-  if (livingResponse === 'pbo') {
+  if (livingResponse === "pbo") {
     liveDetails = (
       <div className="container">
         <br />
         <h2>Living in Peterborough?</h2>
-        <p>If you're moving to Peterborough, you may be interested in looking at student accomodation. More information about UCP's available student accomodation can be found: <a href="">here</a></p>
+        <p>
+          If you're moving to Peterborough, you may be interested in looking at
+          student accomodation. More information about UCP's available student
+          accomodation can be found: <a href="">here</a>
+        </p>
         <p>The historic city of Peterborough has many things to offer...</p>
       </div>
     );
-  } else if (livingResponse === 'nopbo') {
+  } else if (livingResponse === "nopbo") {
     liveDetails = (
-      <div className = "container">
+      <div className="container">
         <br />
         <h2>Staying Somewhere Else?</h2>
-        <p>That's cool too! The city of Peterborough has many things to offer...</p>
-        <p>You may also be interested in what the UCP campus hs to offer you...</p>
+        <p>
+          That's cool too! The city of Peterborough has many things to offer if
+          you've got any free time...
+        </p>
+        <p>
+          You may also be interested in what the UCP campus has to offer you,
+          seeing
+        </p>
       </div>
     );
   }
@@ -219,10 +228,16 @@ export function Openday(props) {
             <h2>
               Right, will you be living in Peterborough while studying with us?
             </h2>
-            <button className="btn btn-primary btn-lg btn-block" onClick={handleInPboClick}>
+            <button
+              className="btn btn-primary btn-lg btn-block"
+              onClick={handleInPboClick}
+            >
               Yes, I Will!
             </button>
-            <button className="btn btn-primary btn-lg btn-block" onClick={handleOutPbo}>
+            <button
+              className="btn btn-primary btn-lg btn-block"
+              onClick={handleOutPbo}
+            >
               Nope, I'm Coming From Somewhere Else!
             </button>
           </div>
@@ -230,6 +245,28 @@ export function Openday(props) {
       ) : null}
 
       {liveDetails}
+
+      {livingSubmitted ? (
+        <>
+          <br />
+          <div className="container">
+            <h2>We hope you feel a bit more knowledgeable about UCP!</h2>
+            <p>
+              We thought you might be interested in some of the information
+              below. Click around to see!
+            </p>
+            <button className="btn btn-primary btn-block btn-lg">
+              Campus Facilities
+            </button>
+            <button className="btn btn-primary btn-block btn-lg">
+              UCP Support
+            </button>
+            <button className="btn btn-primary btn-block btn-lg">
+              Learning Resources
+            </button>
+          </div>
+        </>
+      ) : null}
     </>
   );
 }

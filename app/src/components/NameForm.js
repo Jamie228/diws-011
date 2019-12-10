@@ -4,7 +4,7 @@ import React from "react";
 export function NameForm(props) {
 
 return(
-<form onSubmit={props.onSubmit}>
+<form onSubmit={props.onSubmit} className="fadeIn">
         <label>
           <input
             className="form-control form-control-lg"
