@@ -9,7 +9,24 @@ export function Openday(props) {
   const [courseSubmitted, setCourseSubmitted] = useState(false);
   const [livingResponse, setLivingResponse] = useState("");
   const [livingSubmitted, setLivingSubmitted] = useState(false);
+  const [finalResponse, setFinalResponse] = useState("");
+  const [finalSubmitted, setFinalSubmitted] = useState(false);
 
+  const handleCampFacilClick = evt => {
+    setFinalResponse("campfacil");
+    setFinalSubmitted(true);
+  };
+
+  const handleSupportClick = evt => {
+    setFinalResponse("support");
+    setFinalSubmitted(true);
+  };
+
+  const handleResourceClick = evt => {
+    setFinalResponse("resource");
+    setFinalSubmitted(true);
+  };
+  
   const handleInPboClick = evt => {
     setLivingResponse("pbo");
     setLivingSubmitted(true);
@@ -51,6 +68,28 @@ export function Openday(props) {
 
   let courseDetails;
   let liveDetails;
+  let finalDetails;
+
+  if(finalResponse === "campfacil") {
+    finalDetails = (
+      <div className="container">
+
+      </div>
+    );
+  } else if (finalResponse === "support") {
+    finalDetails = (
+      <div className="container">
+
+      </div>
+    );
+  } else if (finalResponse === "resource") {
+    finalDetails = (
+      <div className="container">
+
+      </div>
+    );
+  }
+
 
   if (courseName === "BSc (Hons) Accounting and Finance") {
     courseDetails = (
@@ -156,9 +195,19 @@ export function Openday(props) {
         <p>
           If you're moving to Peterborough, you may be interested in looking at
           student accomodation. More information about UCP's available student
-          accomodation can be found: <a href="">here</a>
+          accomodation can be found:{" "}
+          <a href="https://www.ucp.ac.uk/student-accommodation/">here</a>
         </p>
-        <p>The historic city of Peterborough has many things to offer...</p>
+        <p>
+          If you aren't moving to Peterborough just to study the degree, you
+          probably know what Peterborough has to offer. Instead, you're probably
+          more interested in what UCP has to offer!
+        </p>
+        <p>
+          You can find out all about our timetabling, how we can support you and
+          employment opportunities right
+          <a href="https://www.ucp.ac.uk/welcome-to-ucp/"> here</a>
+        </p>
       </div>
     );
   } else if (livingResponse === "nopbo") {
@@ -168,12 +217,25 @@ export function Openday(props) {
         <h2>Staying Somewhere Else?</h2>
         <p>
           That's cool too! The city of Peterborough has many things to offer if
-          you've got any free time...
+          you've got any free time during your course. From the 900 year old
+          cathedral, to some more rural sites like Burghley House and Sacrewell
+          Farm and County Centre, there's something for everyone. Not
+          forgetting, of course, Queensgate Shopping and the nightlife comprised
+          of 3 theatres and a wide range of bars, restaurants and nightclubs.
+        </p>
+        <p>
+          <a href="https://www.visitpeterborough.com/things-to-do">
+            See more here
+          </a>
         </p>
         <p>
           You may also be interested in what the UCP campus has to offer you,
-          seeing
+          seeing as you'll be spending a lot of your time there! UCP has a
+          library, nursery, a restaurant and can offer student parking, cycle
+          hire, an on-site prayer and contemplation room, discount gym
+          membership and and on-site hair and beauty salons.
         </p>
+        <p><a href="https://www.ucp.ac.uk/on-site-facilities/">See more here</a></p>
       </div>
     );
   }
@@ -181,7 +243,6 @@ export function Openday(props) {
   return (
     <>
       <NameForm
-        value={name}
         value={name}
         onSubmit={handleSubmit}
         onChange={handleNameChange}
@@ -255,19 +316,25 @@ export function Openday(props) {
               We thought you might be interested in some of the information
               below. Click around to see!
             </p>
-            <button className="btn btn-primary btn-block btn-lg">
+            <button className="btn btn-primary btn-block btn-lg" onClick={handleCampFacilClick}>
               Campus Facilities
             </button>
-            <button className="btn btn-primary btn-block btn-lg">
+            <button className="btn btn-primary btn-block btn-lg" onClick={handleSupportClick}>
               UCP Support
             </button>
-            <button className="btn btn-primary btn-block btn-lg">
+            <button className="btn btn-primary btn-block btn-lg" onClick={handleResourceClick}>
               Learning Resources
             </button>
           </div>
         </>
       ) : null}
+
+    {finalDetails}
+
+    <br />
     </>
+    
+    
   );
 }
 
