@@ -26,7 +26,7 @@ export function Openday(props) {
     setFinalResponse("resource");
     setFinalSubmitted(true);
   };
-  
+
   const handleInPboClick = evt => {
     setLivingResponse("pbo");
     setLivingSubmitted(true);
@@ -70,26 +70,153 @@ export function Openday(props) {
   let liveDetails;
   let finalDetails;
 
-  if(finalResponse === "campfacil") {
+  if (finalResponse === "campfacil") {
     finalDetails = (
       <div className="container">
-
+        <h2>Campus Facilities</h2>
+        <p>
+          We have a wide range of on-site facilities to supplement your
+          experience whilst study with us, these include:
+        </p>
+        <h5>Library</h5>
+        <p>
+          On-site library which provides you with everything you need to help
+          you with your studies. Services include: an extensive range of books,
+          e-books, DVDs, newspapers and journals, a PC Centre, Group Study Area
+          with laptops, PCs and plasma screens, Silent Study Area, Stationery
+          Shop and free Wi-Fi. You also have access to the Anglia Ruskin
+          University library located in Oundle Road as well as their extensive
+          online resources, Harvard Referencing and Research skills guides.{" "}
+        </p>
+        <h5>Nursery</h5>
+        <p>
+          On-site nursery offers high quality childcare in Peterborough for
+          babies and young children aged 3 months to 5 years old. The nursery
+          team consists of highly qualified staff who are here to care for your
+          child/children whilst you study.{" "}
+        </p>
+        <h5>Parcs Restaurant</h5>
+        <p>
+          Solely ran by staff and students within the hospitality and catering
+          department at the on-site College, offering a delicious range of food
+          at fantastic value for money, you’re also giving our students the
+          skills and experience they need to successfully complete their course
+          and go on to achieve great things within the hospitality and catering
+          industry.
+        </p>
+        <h5>Cycle Hire</h5>
+        <p>
+          Use one of our two bikes from our hire scheme which is designed to
+          allow you the convenience of cycling without the expense. Hire the
+          bike for a set period of time, along with the use of a helmet, lights
+          and secure lock. The rental process is simple, visit our Student
+          Support Centre to pay and collect. You'll need to check all your
+          contact information is correct and decide how long you want to rent it
+          for. When collecting your bike you'll need your student ID Card,
+          emergency contact number and a security deposit of £30 which will be
+          fully refunded when you return your bike.{" "}
+        </p>
+        <h5>Student Parking</h5>
+        <p>
+          Students can apply for a permit to park on campus, if their term time
+          address is outside of the PE1 postcode. Permits are free however
+          please note that there are limited spaces and it is on a first come -
+          first served basis.
+        </p>
+        <h5>Lifestyle Fitness</h5>
+        <p>
+          Lifestyle Fitness can offer you a full range of facilities to help you
+          achieve your goals. Benefit from a low monthly membership of only
+          £15.99* and we promise that this will be the price you pay in the
+          future. This low cost includes use of the gym plus a choice of 20+
+          timetabled classes. Facilities include; Technogym strength and fitness
+          equipment, Functional training zone, Vibration plates, Air-conditioned
+          studio, Dedicated spin studio, dance studios, 3G floodlit pitches and
+          Sports Hall which can accommodate badminton, basketball, dance,
+          futsall, football, netball, volleyball and children’s parties.
+        </p>
+        <h5>Revive Hair & Beauty</h5>
+        <p>
+          Offering an excellent range of hair and beauty treatments at very
+          competitive prices. Staff, students and members of the public can
+          relax in style in one of our many on-site salons which use the latest
+          industry standard equipment.{" "}
+        </p>
+        <h5>Prayer and Contemplation Room</h5>
+        <p>
+          Regardless of faith or belief, we have a Prayer & Contemplation room
+          on-site for students to use for prayers, meditation or simply to
+          reflect.
+        </p>
+        <h2>Thanks for Visiting the UCP Virtual Open Day, {name}!</h2>
       </div>
     );
   } else if (finalResponse === "support") {
     finalDetails = (
       <div className="container">
-
+        <h2>Student Support</h2>
+        <p>
+          UCP has its very own Student Support Centre where our team ensure that
+          all student needs are catered for. We are here to support you within
+          your academic life with your educational, health and wellbeing needs.
+          Our building has been carefully designed with the needs of disabled
+          students in mind and together with Anglia Ruskin University we have a
+          team of experienced advisers to help students obtain the necessary
+          support they need. Any potential students who are concerned about
+          their particular situation are welcome to contact us for a
+          confidential conversation.
+        </p>
+        <p>
+          Any degree demonstrates your ability to think and work independently
+          and you will develop important skills in communication, numeracy and
+          information technology. These are the qualities that many employers
+          look for when recruiting.
+        </p>
+        <p>
+          Whatever your reason for going on to Higher Education, we are sure to
+          have a course that meets your needs. Maybe you want a university
+          education qualification to build a new career, or to move to that next
+          step on an existing career path? Studying for a formal higher
+          education qualification can increase your employability, your lifetime
+          earnings and could help you find a fulfilling job.
+        </p>
+        <p>
+          Throughout your time at UCP you’ll also have a personal tutor who will
+          listen to you, encourage you and support you, as well as helping you
+          maximise your academic opportunities.
+        </p>
+        <p>
+          <a href="https://www.ucp.ac.uk/supporting-you/">
+            More information on Student Support can be found here
+          </a>
+        </p>
+        <h2>Thanks for Visiting the UCP Virtual Open Day, {name}!</h2>
       </div>
     );
   } else if (finalResponse === "resource") {
     finalDetails = (
       <div className="container">
-
+        <h2>Learning Resources</h2>
+        <h5>e-Vision</h5>
+        <p>Is your online information gateway for your studies. Which allows you to access and change your personal details as well as viewing your modules, assessment deadlines and transcript of your results.</p>
+        <h5>Virtual Learning Environment (VLE)</h5>
+        <p>UCP also offers an extensive Virtual Learning Environment (VLE) and access to Anglia Ruskin University libraries via online resources and our Guild House campus on Oundle Road, Peterborough. If you still are a little worried about the skills needed for academic study rest assured as we have a team of lecturers delivering a matrix of study skills which include Harvard referencing, essay planning, seminar confidence boosting sessions and help with maths for those considering a degree in computing or business. Just remember we are here to help!</p>
+        <h5>ARU Library – Oundle Road Peterborough</h5>
+        <p>Access to online resources, books, journals, articles, newspapers, past exam papers, special collections, e-books, box of broadcasts and much more.</p>
+        <h5>Library+</h5>
+        <p>The Library+ at Peterborough Regional College is an excellent learning and resource centre and is available for you to use and to help with your studies. Facilities include a large drop-in PC Centre providing access to the Internet and Microsoft Office as well as many other software packages; a wide range of books for reference and loan; newspapers, journals and e-journals; group and silent study areas; facilities to watch DVDs; photocopying facilities; and a selection of stationery for sale. The team are always pleased to help you use the various services available and can offer useful advice to help you find the resources you need.</p>
+        <h5>Get IT Sorted</h5>
+        <p>Getting access to all of the things that you need to begin your studies can be daunting, which is why we run drop-in sessions to help you Get IT Sorted. Sessions run on weekdays during Welcome Week and the first week of teaching. There's no need to book, just bring along your devices (laptop, phone, tablet) and we'll show you how to get connected. We promote these events throughout the year on social media and through posters so keep your eye out for the upcoming dates. </p>
+        <h5>Student Printing</h5>
+        <p>Our new print service provides greater flexibility in when and where you print. Print to a single print queue and then release your print from any of our student printers within our building in the open access areas. Nothing will be printed until you are ready to collect – then simply tap into any student printer using your ID Card or log in directly on the printer and select your print requests on the screen.</p>
+        <h5>Student Email</h5>
+        <p>We use Microsoft Outlook Web App in order for you to be able to send and receive emails. Emails can be sent internally to any member of staff, or externally as required. You will be able to access your student email from any PC with an internet connection. It will give you email, calendar, contact and task management features. You will be able to access your email from an internet browser by navigating to My.Anglia and clicking on the Email Login link. We recommend that you access your student email at least twice a week during term time to check for important information.</p>
+        <h5>Turnitin UK</h5>
+        <p>A text-matching software, is widely used by a large number of Universities within the UK and matches text of submitted work to that in a large database of online sources. This software highlights plagiarism by comparing the students’ submitted work for text matches to outside sources such as the current and archived internet, journal articles and previously submitted student papers. This is not software to ‘catch-out’ students, but to help enhance and develop your good academic practice.</p>
+        <h2>Thanks for Visiting the UCP Virtual Open Day, {name}!</h2>
       </div>
     );
   }
-
 
   if (courseName === "BSc (Hons) Accounting and Finance") {
     courseDetails = (
@@ -235,7 +362,9 @@ export function Openday(props) {
           hire, an on-site prayer and contemplation room, discount gym
           membership and and on-site hair and beauty salons.
         </p>
-        <p><a href="https://www.ucp.ac.uk/on-site-facilities/">See more here</a></p>
+        <p>
+          <a href="https://www.ucp.ac.uk/on-site-facilities/">See more here</a>
+        </p>
       </div>
     );
   }
@@ -316,25 +445,32 @@ export function Openday(props) {
               We thought you might be interested in some of the information
               below. Click around to see!
             </p>
-            <button className="btn btn-primary btn-block btn-lg" onClick={handleCampFacilClick}>
+            <button
+              className="btn btn-primary btn-block btn-lg"
+              onClick={handleCampFacilClick}
+            >
               Campus Facilities
             </button>
-            <button className="btn btn-primary btn-block btn-lg" onClick={handleSupportClick}>
+            <button
+              className="btn btn-primary btn-block btn-lg"
+              onClick={handleSupportClick}
+            >
               UCP Support
             </button>
-            <button className="btn btn-primary btn-block btn-lg" onClick={handleResourceClick}>
+            <button
+              className="btn btn-primary btn-block btn-lg"
+              onClick={handleResourceClick}
+            >
               Learning Resources
             </button>
           </div>
         </>
       ) : null}
 
-    {finalDetails}
+      {finalDetails}
 
-    <br />
+      <br />
     </>
-    
-    
   );
 }
 
