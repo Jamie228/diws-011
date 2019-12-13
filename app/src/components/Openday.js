@@ -198,21 +198,83 @@ export function Openday(props) {
       <div className="container">
         <h2>Learning Resources</h2>
         <h5>e-Vision</h5>
-        <p>Is your online information gateway for your studies. Which allows you to access and change your personal details as well as viewing your modules, assessment deadlines and transcript of your results.</p>
+        <p>
+          Is your online information gateway for your studies. Which allows you
+          to access and change your personal details as well as viewing your
+          modules, assessment deadlines and transcript of your results.
+        </p>
         <h5>Virtual Learning Environment (VLE)</h5>
-        <p>UCP also offers an extensive Virtual Learning Environment (VLE) and access to Anglia Ruskin University libraries via online resources and our Guild House campus on Oundle Road, Peterborough. If you still are a little worried about the skills needed for academic study rest assured as we have a team of lecturers delivering a matrix of study skills which include Harvard referencing, essay planning, seminar confidence boosting sessions and help with maths for those considering a degree in computing or business. Just remember we are here to help!</p>
+        <p>
+          UCP also offers an extensive Virtual Learning Environment (VLE) and
+          access to Anglia Ruskin University libraries via online resources and
+          our Guild House campus on Oundle Road, Peterborough. If you still are
+          a little worried about the skills needed for academic study rest
+          assured as we have a team of lecturers delivering a matrix of study
+          skills which include Harvard referencing, essay planning, seminar
+          confidence boosting sessions and help with maths for those considering
+          a degree in computing or business. Just remember we are here to help!
+        </p>
         <h5>ARU Library – Oundle Road Peterborough</h5>
-        <p>Access to online resources, books, journals, articles, newspapers, past exam papers, special collections, e-books, box of broadcasts and much more.</p>
+        <p>
+          Access to online resources, books, journals, articles, newspapers,
+          past exam papers, special collections, e-books, box of broadcasts and
+          much more.
+        </p>
         <h5>Library+</h5>
-        <p>The Library+ at Peterborough Regional College is an excellent learning and resource centre and is available for you to use and to help with your studies. Facilities include a large drop-in PC Centre providing access to the Internet and Microsoft Office as well as many other software packages; a wide range of books for reference and loan; newspapers, journals and e-journals; group and silent study areas; facilities to watch DVDs; photocopying facilities; and a selection of stationery for sale. The team are always pleased to help you use the various services available and can offer useful advice to help you find the resources you need.</p>
+        <p>
+          The Library+ at Peterborough Regional College is an excellent learning
+          and resource centre and is available for you to use and to help with
+          your studies. Facilities include a large drop-in PC Centre providing
+          access to the Internet and Microsoft Office as well as many other
+          software packages; a wide range of books for reference and loan;
+          newspapers, journals and e-journals; group and silent study areas;
+          facilities to watch DVDs; photocopying facilities; and a selection of
+          stationery for sale. The team are always pleased to help you use the
+          various services available and can offer useful advice to help you
+          find the resources you need.
+        </p>
         <h5>Get IT Sorted</h5>
-        <p>Getting access to all of the things that you need to begin your studies can be daunting, which is why we run drop-in sessions to help you Get IT Sorted. Sessions run on weekdays during Welcome Week and the first week of teaching. There's no need to book, just bring along your devices (laptop, phone, tablet) and we'll show you how to get connected. We promote these events throughout the year on social media and through posters so keep your eye out for the upcoming dates. </p>
+        <p>
+          Getting access to all of the things that you need to begin your
+          studies can be daunting, which is why we run drop-in sessions to help
+          you Get IT Sorted. Sessions run on weekdays during Welcome Week and
+          the first week of teaching. There's no need to book, just bring along
+          your devices (laptop, phone, tablet) and we'll show you how to get
+          connected. We promote these events throughout the year on social media
+          and through posters so keep your eye out for the upcoming dates.{" "}
+        </p>
         <h5>Student Printing</h5>
-        <p>Our new print service provides greater flexibility in when and where you print. Print to a single print queue and then release your print from any of our student printers within our building in the open access areas. Nothing will be printed until you are ready to collect – then simply tap into any student printer using your ID Card or log in directly on the printer and select your print requests on the screen.</p>
+        <p>
+          Our new print service provides greater flexibility in when and where
+          you print. Print to a single print queue and then release your print
+          from any of our student printers within our building in the open
+          access areas. Nothing will be printed until you are ready to collect –
+          then simply tap into any student printer using your ID Card or log in
+          directly on the printer and select your print requests on the screen.
+        </p>
         <h5>Student Email</h5>
-        <p>We use Microsoft Outlook Web App in order for you to be able to send and receive emails. Emails can be sent internally to any member of staff, or externally as required. You will be able to access your student email from any PC with an internet connection. It will give you email, calendar, contact and task management features. You will be able to access your email from an internet browser by navigating to My.Anglia and clicking on the Email Login link. We recommend that you access your student email at least twice a week during term time to check for important information.</p>
+        <p>
+          We use Microsoft Outlook Web App in order for you to be able to send
+          and receive emails. Emails can be sent internally to any member of
+          staff, or externally as required. You will be able to access your
+          student email from any PC with an internet connection. It will give
+          you email, calendar, contact and task management features. You will be
+          able to access your email from an internet browser by navigating to
+          My.Anglia and clicking on the Email Login link. We recommend that you
+          access your student email at least twice a week during term time to
+          check for important information.
+        </p>
         <h5>Turnitin UK</h5>
-        <p>A text-matching software, is widely used by a large number of Universities within the UK and matches text of submitted work to that in a large database of online sources. This software highlights plagiarism by comparing the students’ submitted work for text matches to outside sources such as the current and archived internet, journal articles and previously submitted student papers. This is not software to ‘catch-out’ students, but to help enhance and develop your good academic practice.</p>
+        <p>
+          A text-matching software, is widely used by a large number of
+          Universities within the UK and matches text of submitted work to that
+          in a large database of online sources. This software highlights
+          plagiarism by comparing the students’ submitted work for text matches
+          to outside sources such as the current and archived internet, journal
+          articles and previously submitted student papers. This is not software
+          to ‘catch-out’ students, but to help enhance and develop your good
+          academic practice.
+        </p>
         <h2>Thanks for Visiting the UCP Virtual Open Day, {name}!</h2>
       </div>
     );
