@@ -181,6 +181,7 @@ export function Openday(props) {
         </div>
 
         <h2>Thanks for Visiting the UCP Virtual Open Day, {name}!</h2>
+        <p><a href=".">Start Again</a></p>
       </div>
     );
   } else if (finalResponse === "support") {
@@ -223,6 +224,7 @@ export function Openday(props) {
           </a>
         </p>
         <h2>Thanks for Visiting the UCP Virtual Open Day, {name}!</h2>
+        <p><a href=".">Start Again</a></p>
       </div>
     );
   } else if (finalResponse === "resource") {
@@ -339,6 +341,7 @@ export function Openday(props) {
           </div>
         </div>
         <h2>Thanks for Visiting the UCP Virtual Open Day, {name}!</h2>
+        <p><a href=".">Start Again</a></p>
       </div>
     );
   }
