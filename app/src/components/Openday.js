@@ -72,82 +72,114 @@ export function Openday(props) {
 
   if (finalResponse === "campfacil") {
     finalDetails = (
-      <div className="container">
+      <div className="container-fluid">
         <h2>Campus Facilities</h2>
         <p>
           We have a wide range of on-site facilities to supplement your
           experience whilst study with us, these include:
         </p>
-        <h5>Library</h5>
-        <p>
-          On-site library which provides you with everything you need to help
-          you with your studies. Services include: an extensive range of books,
-          e-books, DVDs, newspapers and journals, a PC Centre, Group Study Area
-          with laptops, PCs and plasma screens, Silent Study Area, Stationery
-          Shop and free Wi-Fi. You also have access to the Anglia Ruskin
-          University library located in Oundle Road as well as their extensive
-          online resources, Harvard Referencing and Research skills guides.{" "}
-        </p>
-        <h5>Nursery</h5>
-        <p>
-          On-site nursery offers high quality childcare in Peterborough for
-          babies and young children aged 3 months to 5 years old. The nursery
-          team consists of highly qualified staff who are here to care for your
-          child/children whilst you study.{" "}
-        </p>
-        <h5>Parcs Restaurant</h5>
-        <p>
-          Solely ran by staff and students within the hospitality and catering
-          department at the on-site College, offering a delicious range of food
-          at fantastic value for money, you’re also giving our students the
-          skills and experience they need to successfully complete their course
-          and go on to achieve great things within the hospitality and catering
-          industry.
-        </p>
-        <h5>Cycle Hire</h5>
-        <p>
-          Use one of our two bikes from our hire scheme which is designed to
-          allow you the convenience of cycling without the expense. Hire the
-          bike for a set period of time, along with the use of a helmet, lights
-          and secure lock. The rental process is simple, visit our Student
-          Support Centre to pay and collect. You'll need to check all your
-          contact information is correct and decide how long you want to rent it
-          for. When collecting your bike you'll need your student ID Card,
-          emergency contact number and a security deposit of £30 which will be
-          fully refunded when you return your bike.{" "}
-        </p>
-        <h5>Student Parking</h5>
-        <p>
-          Students can apply for a permit to park on campus, if their term time
-          address is outside of the PE1 postcode. Permits are free however
-          please note that there are limited spaces and it is on a first come -
-          first served basis.
-        </p>
-        <h5>Lifestyle Fitness</h5>
-        <p>
-          Lifestyle Fitness can offer you a full range of facilities to help you
-          achieve your goals. Benefit from a low monthly membership of only
-          £15.99* and we promise that this will be the price you pay in the
-          future. This low cost includes use of the gym plus a choice of 20+
-          timetabled classes. Facilities include; Technogym strength and fitness
-          equipment, Functional training zone, Vibration plates, Air-conditioned
-          studio, Dedicated spin studio, dance studios, 3G floodlit pitches and
-          Sports Hall which can accommodate badminton, basketball, dance,
-          futsall, football, netball, volleyball and children’s parties.
-        </p>
-        <h5>Revive Hair & Beauty</h5>
-        <p>
-          Offering an excellent range of hair and beauty treatments at very
-          competitive prices. Staff, students and members of the public can
-          relax in style in one of our many on-site salons which use the latest
-          industry standard equipment.{" "}
-        </p>
-        <h5>Prayer and Contemplation Room</h5>
-        <p>
-          Regardless of faith or belief, we have a Prayer & Contemplation room
-          on-site for students to use for prayers, meditation or simply to
-          reflect.
-        </p>
+        <div className="card-deck mb-4">
+          <div className="card">
+            <div className="card-header">Library</div>
+            <div className="card-body">
+              On-site library which provides you with everything you need to
+              help you with your studies. Services include: an extensive range
+              of books, e-books, DVDs, newspapers and journals, a PC Centre,
+              Group Study Area with laptops, PCs and plasma screens, Silent
+              Study Area, Stationery Shop and free Wi-Fi. You also have access
+              to the Anglia Ruskin University library located in Oundle Road as
+              well as their extensive online resources, Harvard Referencing and
+              Research skills guides.
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-header">Nursery</div>
+            <div className="card-body">
+              On-site nursery offers high quality childcare in Peterborough for
+              babies and young children aged 3 months to 5 years old. The
+              nursery team consists of highly qualified staff who are here to
+              care for your child/children whilst you study.
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-header">Parcs Restaurant</div>
+            <div className="card-body">
+              Solely ran by staff and students within the hospitality and
+              catering department at the on-site College, offering a delicious
+              range of food at fantastic value for money, you’re also giving our
+              students the skills and experience they need to successfully
+              complete their course and go on to achieve great things within the
+              hospitality and catering industry.
+            </div>
+          </div>
+        </div>
+
+        <div className="card-deck mb-4">
+          <div className="card">
+            <div className="card-header">Cycle Hire</div>
+            <div className="card-body">
+              Use one of our two bikes from our hire scheme which is designed to
+              allow you the convenience of cycling without the expense. Hire the
+              bike for a set period of time, along with the use of a helmet,
+              lights and secure lock. The rental process is simple, visit our
+              Student Support Centre to pay and collect. You'll need to check
+              all your contact information is correct and decide how long you
+              want to rent it for. When collecting your bike you'll need your
+              student ID Card, emergency contact number and a security deposit
+              of £30 which will be fully refunded when you return your bike.
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-header">Student Parking</div>
+            <div className="card-body">
+              Students can apply for a permit to park on campus, if their term
+              time address is outside of the PE1 postcode. Permits are free
+              however please note that there are limited spaces and it is on a
+              first come - first served basis.
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-header">Lifestyle Fitness</div>
+            <div className="card-body">
+              Lifestyle Fitness can offer you a full range of facilities to help
+              you achieve your goals. Benefit from a low monthly membership of
+              only £15.99* and we promise that this will be the price you pay in
+              the future. This low cost includes use of the gym plus a choice of
+              20+ timetabled classes. Facilities include; Technogym strength and
+              fitness equipment, Functional training zone, Vibration plates,
+              Air-conditioned studio, Dedicated spin studio, dance studios, 3G
+              floodlit pitches and Sports Hall which can accommodate badminton,
+              basketball, dance, futsall, football, netball, volleyball and
+              children’s parties.
+            </div>
+          </div>
+        </div>
+
+        <div className="card-deck mb-4">
+          <div className="card">
+            <div className="card-header">Revive Hair & Beauty</div>
+            <div className="card-body">
+              Offering an excellent range of hair and beauty treatments at very
+              competitive prices. Staff, students and members of the public can
+              relax in style in one of our many on-site salons which use the
+              latest industry standard equipment.
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-header">Prayer and Contemplation Room</div>
+            <div className="card-body">
+              Regardless of faith or belief, we have a Prayer & Contemplation
+              room on-site for students to use for prayers, meditation or simply
+              to reflect.
+            </div>
+          </div>
+        </div>
+
         <h2>Thanks for Visiting the UCP Virtual Open Day, {name}!</h2>
       </div>
     );
@@ -439,9 +471,10 @@ export function Openday(props) {
           That's cool too! The city of Peterborough has many things to offer if
           you've got any free time during your course. From the 900 year old
           cathedral, to some more rural sites like Burghley House and Sacrewell
-          Farm and County Centre, there's something for everyone. Even you, {name}! Not
-          forgetting, of course, Queensgate Shopping and the nightlife comprised
-          of 3 theatres and a wide range of bars, restaurants and nightclubs.
+          Farm and County Centre, there's something for everyone. Even you,{" "}
+          {name}! Not forgetting, of course, Queensgate Shopping and the
+          nightlife comprised of 3 theatres and a wide range of bars,
+          restaurants and nightclubs.
         </p>
         <p>
           <a href="https://www.visitpeterborough.com/things-to-do">
@@ -509,7 +542,8 @@ export function Openday(props) {
           <br />
           <div className="container">
             <h2>
-              Right {name}, will you be living in Peterborough while studying with us?
+              Right {name}, will you be living in Peterborough while studying
+              with us?
             </h2>
             <button
               className="btn btn-primary btn-lg btn-block"
