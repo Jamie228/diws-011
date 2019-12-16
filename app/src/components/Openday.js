@@ -438,6 +438,8 @@ export function Openday(props) {
           <li>Performance Practice-as-Research</li>
           <li>Applied Performance Project</li>
         </ul>
+
+        <p><a href="https://www.ucp.ac.uk/a-z-courses/undergraduate-courses/ba-hons-performing-arts-20/">Find out more here!</a></p>
       </div>
     );
   }
